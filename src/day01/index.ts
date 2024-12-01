@@ -3,7 +3,7 @@ import run from "aocrunner";
 const parseInput = (rawInput: string): number[][] => {
   let firstList: number[] = [];
   let secondList: number[] = [];
-  let qq = rawInput.split("\n").map((line) => {
+  rawInput.split("\n").map((line) => {
     let [first, second] = line.split("   ");
     firstList.push(parseInt(first));
     secondList.push(parseInt(second));
